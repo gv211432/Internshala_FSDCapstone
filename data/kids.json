@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "name": "Black White Dress",
+      "id": "kids-1",
+      "tag": "kids",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "Lorem",
+      "img_url": "/img/products/kids/black-white-girl.jpg",
+      "price": ""
+    },
+    {
+      "name": "Blue Dress",
+      "id": "kids-2",
+      "tag": "kids",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "Lorem",
+      "img_url": "/img/products/kids/blue-dress-girl.jpg",
+      "price": ""
+    },
+    {
+      "name": "Pink Dress",
+      "id": "kids-3",
+      "tag": "kids",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "Lorem",
+      "img_url": "/img/products/kids/pink-dress-girl.jpg",
+      "price": ""
+    },
+    {
+      "name": "Red Gown",
+      "id": "kids-4",
+      "tag": "kids",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "Lorem",
+      "img_url": "/img/products/kids/red-gown.jpg",
+      "price": ""
+    },
+    {
+      "name": "RoyleBlue Dress",
+      "id": "kids-5",
+      "tag": "kids",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "Lorem",
+      "img_url": "/img/products/kids/royle-blue.jpg",
+      "price": ""
+    },
+    {
+      "name": "Silver silk",
+      "id": "kids-6",
+      "tag": "kids",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "Lorem",
+      "img_url": "/img/products/kids/silver-silk.jpg",
+      "price": ""
+    },
+    {
+      "name": "Sirt pant",
+      "id": "kids-7",
+      "tag": "kids",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "Lorem",
+      "img_url": "/img/products/kids/sirt-pant.jpg",
+      "price": ""
+    },
+    {
+      "name": "White red dress",
+      "id": "kids-8",
+      "tag": "kids",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "Lorem",
+      "img_url": "/img/products/kids/white-dress.jpg",
+      "price": ""
+    }
+  ]
+}

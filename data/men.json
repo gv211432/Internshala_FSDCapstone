@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "name": "Blue hoodie",
+      "id": 1,
+      "tag": "hoodie",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/hoodies/blue-hood.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Full hoodie",
+      "id": 1,
+      "tag": "hoodie",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/hoodies/full-hood.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Yellow-black hoodie",
+      "id": 1,
+      "tag": "hoodie",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/hoodies/yellow-black-hood.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Grey hoodie",
+      "id": 1,
+      "tag": "hoodie",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/hoodies/grey-hood.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Marine hoodie",
+      "id": 1,
+      "tag": "hoodie",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/hoodies/marine-hood.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Casual blue",
+      "id": 1,
+      "tag": "pant",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/pants/casual-blue.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Formal black",
+      "id": 1,
+      "tag": "pant",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/pants/formal-black.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Formal grey",
+      "id": 1,
+      "tag": "pant",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/pants/formal-grey.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "geans",
+      "id": 1,
+      "tag": "pant",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/pants/geans.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Military green",
+      "id": 1,
+      "tag": "pant",
+      "e-tag":"cloths wears men fashion awesome",
+      "img_url": "/img/products/men/pants/military-green.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Rebook blue",
+      "id": 1,
+      "tag": "pant",
+      "e-tag":"cloths wears men fashion fancy",
+      "img_url": "/img/products/men/pants/rebook-blue.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Checks Boxs",
+      "id": 1,
+      "tag": "shirt",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/shirt/checks-boxs.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Dark blue dots",
+      "id": 1,
+      "tag": "shirt",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/shirt/Dark-blue-dots.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Grey checks",
+      "id": 1,
+      "tag": "shirt",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/shirt/grey-checks.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Lite blue shirt",
+      "id": 1,
+      "tag": "shirt",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/shirt/Lite-blue-shirt.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
+      "name": "Men grey sirt",
+      "id": 1,
+      "tag": "shirt",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/shirt/men-grey-sirt.jpg",
+      "description": "",
+      "price": ""
+    }
+  ]
+}

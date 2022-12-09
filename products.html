@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="/css/global.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .carousel-inner {
+        padding: 1em;
+      }
+      .card {
+        margin: 0 0.5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        background-color: #e1e1e1;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @media (min-width: 768px) {
+        .carousel-item {
+          margin-right: 0;
+          flex: 0 0 33.333333%;
+          display: block;
+        }
+        .carousel-inner {
+          display: flex;
+        }
+      }
+      .card .img-wrapper {
+        max-width: 100%;
+
+        height: 17em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card img {
+        max-height: 100%;
+      }
+      @media (max-width: 767px) {
+        .card .img-wrapper {
+          height: 17em;
+        }
+      }
+    </style>
+    <title>Products</title>
+  </head>
+  <body onload="init()">
+    <!-- mount point for header -->
+    <div id="app-header"></div>
+
+    <div class="container" style="min-height: 80vh">
+      <!-- this  is the hidden navigation bar -->
+      <nav style="display: none">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link"
+            id="nav-product-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-product"
+            type="button"
+            role="tab"
+            aria-controls="nav-product"
+            aria-selected="true"
+          >
+            All Products
+          </button>
+          <button
+            class="nav-link"
+            id="nav-women-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-women"
+            type="button"
+            role="tab"
+            aria-controls="nav-women"
+            aria-selected="false"
+          >
+            Women
+          </button>
+          <button
+            class="nav-link"
+            id="nav-dress-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-dress"
+            type="button"
+            role="tab"
+            aria-controls="nav-dress"
+            aria-selected="false"
+          >
+            Dresses
+          </button>
+          <button
+            class="nav-link"
+            id="nav-pants-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-pants"
+            type="button"
+            role="tab"
+            aria-controls="nav-pants"
+            aria-selected="false"
+          >
+            Women Pants
+          </button>
+          <button
+            class="nav-link"
+            id="nav-skirts-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-skirts"
+            type="button"
+            role="tab"
+            aria-controls="nav-skirts"
+            aria-selected="false"
+          >
+            Skirts
+          </button>
+          <button
+            class="nav-link"
+            id="nav-men-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-men"
+            type="button"
+            role="tab"
+            aria-controls="nav-men"
+            aria-selected="false"
+            onclick="update_hash()"
+          >
+            Men
+          </button>
+
+          <button
+            class="nav-link"
+            id="nav-men-pants-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-men-pants"
+            type="button"
+            role="tab"
+            aria-controls="nav-men-pants"
+            aria-selected="false"
+          >
+            Men Pants
+          </button>
+          <button
+            class="nav-link"
+            id="nav-hoodies-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-hoodies"
+            type="button"
+            role="tab"
+            aria-controls="nav-hoodies"
+            aria-selected="false"
+          >
+            Hoodies
+          </button>
+          <button
+            class="nav-link"
+            id="nav-shirts-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-shirts"
+            type="button"
+            role="tab"
+            aria-controls="nav-shirts"
+            aria-selected="false"
+          >
+            Shirts
+          </button>
+          <button
+            class="nav-link"
+            id="nav-kids-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-kids"
+            type="button"
+            role="tab"
+            aria-controls="nav-kids"
+            aria-selected="false"
+          >
+            Shirts
+          </button>
+        </div>
+      </nav>
+      <br />
+      <br />
+
+      <!-- this is the conten page for navigation bar which can be toggled and changed -->
+      <div class="tab-content mt-3 mb-3" id="nav-tabContent">
+        <div
+          class="tab-pane fade"
+          id="nav-product"
+          role="tabpanel"
+          aria-labelledby="nav-product-tab"
+        ></div>
+
+        <!-- women section -->
+        <div
+          class="tab-pane fade"
+          id="nav-women"
+          role="tabpanel"
+          aria-labelledby="nav-women-tab"
+        ></div>
+
+        <!-- women sub section -->
+        <div
+          class="tab-pane fade"
+          id="nav-dress"
+          role="tabpanel"
+          aria-labelledby="nav-dress-tab"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="nav-pants"
+          role="tabpanel"
+          aria-labelledby="nav-pants-tab"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="nav-skirts"
+          role="tabpanel"
+          aria-labelledby="nav-skirts-tab"
+        ></div>
+
+        <!-- men section -->
+        <div
+          class="tab-pane fade"
+          id="nav-men"
+          role="tabpanel"
+          aria-labelledby="nav-men-tab"
+        ></div>
+        <!-- men subsection -->
+        <div
+          class="tab-pane fade"
+          id="nav-men-pants"
+          role="tabpanel"
+          aria-labelledby="nav-men-pants-tab"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="nav-hoodies"
+          role="tabpanel"
+          aria-labelledby="nav-hoodies-tab"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="nav-shirts"
+          role="tabpanel"
+          aria-labelledby="nav-shirts-tab"
+        ></div>
+
+        <!-- kids section -->
+        <div
+          class="tab-pane fade"
+          id="nav-kids"
+          role="tabpanel"
+          aria-labelledby="nav-kids-tab"
+        ></div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- mount point for footer -->
+    <div id="app-footer"></div>
+
+    <script src="/js/load_components.js"></script>
+    <!-- this is used to handle the tabs toggling -->
+    <script>
+      var hash_store = "";
+      var first_visit = true;
+
+      function secondary_inti() {
+        console.log("hello");
+        let hash = window.location.hash;
+        // console.log(hash);
+        let tab = document.getElementById(hash.substring(1) + "-tab");
+        let tab_section = $(hash).addClass("active show");
+        // if(hash == "#nav-kids") activate_kids_carousle();
+        // else if(hash == "#nav-women") activate_women_carousle();
+        tab.click(); // click the hidden nav button to toggle tabs
+        // console.log(tab);
+      }
+
+      // this can be called to update the page state
+      function init() {
+        if (first_visit && window.location.hash != "#nav-product") {
+          let ele = $("#nav-product").addClass("active show");
+          $("#nav-product-tab").click();
+          setTimeout(() => {
+            console.log("Timeout...");
+            ele.removeClass("active show");
+            secondary_inti();
+          }, 1000);
+        } else {
+          secondary_inti();
+        }
+        first_visit = false;
+      }
+
+      // this event listner is fired on hashchange on url
+      window.addEventListener("hashchange", function () {
+        if (hash_store) {
+          $(hash_store).removeClass("active show");
+        }
+        hash_store = window.location.hash;
+        console.log(hash_store);
+        console.log("location changed!");
+        init();
+      });
+    </script>
+    <script src="/js/load_products.js"></script>
+    <script src="/js/global.js"></script>
+  </body>
+</html>

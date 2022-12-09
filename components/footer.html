@@ -1,0 +1,121 @@
+<!-- a footer with four section -->
+<footer class="text-muted">
+  <div class="bg-dark">
+    <div class="row mx-auto pt-3 pb-3" style="max-width: 40rem">
+      <div class="col">
+        <h5>
+          <a
+            href="/products.html#nav-women"
+            style="text-decoration: none"
+            class="text-secondary"
+            >Women</a
+          >
+        </h5>
+        <h6><a href="/products.html#nav-dress">Dress</a></h6>
+        <h6><a href="/products.html#nav-pants">Pants</a></h6>
+        <h6><a href="/products.html#nav-skirts">Skirts</a></h6>
+      </div>
+      <div class="col">
+        <h5>
+          <a
+            href="/products.html#nav-men"
+            style="text-decoration: none"
+            class="text-secondary"
+            >Men</a
+          >
+        </h5>
+        <h6><a href="/products.html#nav-shirts">Sirts</a></h6>
+        <h6><a href="/products.html#nav-men-pants">Pants</a></h6>
+        <h6><a href="/products.html#nav-hoodies">Hoodies</a></h6>
+      </div>
+      <div class="col">
+        <h5>
+          <a
+            style="text-decoration: none"
+            class="text-secondary"
+            href="/products.html#nav-kids"
+            >Kids</a
+          >
+        </h5>
+      </div>
+      <div class="col">
+        <h5>Links</h5>
+        <h6><a href="index.html">Home</a></h6>
+        <h6><a href="login.html">Login</a></h6>
+        <h6><a href="contact.html">Contact</a></h6>
+      </div>
+    </div>
+    <hr />
+    <div class="row pb-3">
+      <center>
+        <h5>Copyright ©️ E-Shop 2022-23</h5>
+      </center>
+    </div>
+  </div>
+</footer>
+
+<!-- this is used for notification -->
+<!-- mount point for notifications -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div
+    id="liveToast"
+    class="toast hide"
+    role="alert"
+    aria-live="assertive"
+    aria-atomic="true"
+  >
+    <div id="notify_item_details"></div>
+    <div class="toast-body" id="notify_items_count">Total 0 items in cart</div>
+  </div>
+</div>
+
+<!-- this Button trigger modal -->
+<!-- this button is hidden and click using javascript -->
+<button
+  type="button"
+  class="btn btn-primary"
+  id="modal_button"
+  style="display: none"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+>
+  Hidden button
+</button>
+
+<!-- Modal will be available of every page -->
+<!-- this is the modal which will appear on above button click -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="modal_title"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_title">Modal title</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body" id="modal_body">...</div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          id="modal_lbutton"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        ></button>
+        <button
+          type="button"
+          id="modal_rbutton"
+          class="btn btn-primary"
+        ></button>
+      </div>
+    </div>
+  </div>
+</div>
