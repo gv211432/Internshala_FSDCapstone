@@ -79,6 +79,24 @@
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
       "img_url": "/img/products/women/skirts/blue-style-skirt.jpg",
       "price": ""
+    }, {
+      "name": "Geans Light",
+      "id": "skirt-1",
+      "e-tag": "ladies girls cloths wears skirt soft",
+      "tag": "skirt",
+      "count": "9",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "img_url": "/img/products/women/skirts/light_geans_skirt.jpg",
+      "price": ""
+    }, {
+      "name": "Red Soft",
+      "id": "skirt-1",
+      "e-tag": "ladies girls cloths wears skirt tilted ligth",
+      "tag": "skirt",
+      "count": "9",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "img_url": "/img/products/women/skirts/red_tilted_soft_light.jpg",
+      "price": ""
     },
     {
       "name": "Golden Skirt",
@@ -108,6 +126,56 @@
       "count": "9",
       "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
       "img_url": "/img/products/women/skirts/traditional-skirt.jpg",
+      "price": ""
+    },
+    {
+      "name": "boxes_women_pant",
+      "id": "",
+      "e-tag": "ladies girls cloths wears skirt",
+      "tag": "pants",
+      "count": "9",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "img_url": "img/products/women/pants/boxes_women_pant.jpg",
+      "price": ""
+    },
+    {
+      "name": "ocher_yellow_women_pant",
+      "id": "",
+      "e-tag": "ladies girls cloths wears skirt",
+      "tag": "pants",
+      "count": "9",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "img_url": "img/products/women/pants/ocher_yellow_women_pant.jpg",
+      "price": ""
+    },
+    {
+      "name": "white_grey_women",
+      "id": "",
+      "e-tag": "ladies girls cloths wears skirt",
+      "tag": "pants",
+      "count": "9",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "img_url": "img/products/women/pants/white_grey_women.jpg",
+      "price": ""
+    },
+    {
+      "name": "Peach Unique attire",
+      "id": "dress",
+      "e-tag": "ladies girls cloths wears dress top",
+      "tag": "dress",
+      "count": "9",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "img_url": "img/products/women/dress/peach_unique.jpg",
+      "price": ""
+    },
+    {
+      "name": "Red traditional lengha",
+      "id": "dress",
+      "e-tag": "ladies girls cloths wears dress top",
+      "tag": "dress",
+      "count": "9",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      "img_url": "img/products/women/dress/red_traditional_lengha.jpg",
       "price": ""
     }
   ]

@@ -64,7 +64,7 @@ var get_query_params = (name, url = window.location.href) => {
 // this generates the search result card rows
 var create_serach_result_row = (data) => {
   let search_templet = `
-            <a class="dropdown-item" href="one.html">
+            <a class="dropdown-item" onclick="console.log("clicked")">
               <div class="input-group">
                 <span class="input-group-text">
                   <img

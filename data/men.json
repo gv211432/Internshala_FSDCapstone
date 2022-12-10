@@ -19,6 +19,15 @@
       "price": ""
     },
     {
+      "name": "Black Jatt hoodie",
+      "id": 1,
+      "tag": "hoodie",
+      "e-tag":"cloths wears men fashion letters",
+      "img_url": "/img/products/men/hoodies/black_jatt_hoodie.jpg",
+      "description": "",
+      "price": ""
+    },
+    {
       "name": "Yellow-black hoodie",
       "id": 1,
       "tag": "hoodie",
@@ -79,7 +88,7 @@
       "e-tag":"cloths wears men fashion ",
       "img_url": "/img/products/men/pants/geans.jpg",
       "description": "",
-      "price": ""
+      "price": "1300"
     },
     {
       "name": "Military green",
@@ -88,7 +97,7 @@
       "e-tag":"cloths wears men fashion awesome",
       "img_url": "/img/products/men/pants/military-green.jpg",
       "description": "",
-      "price": ""
+      "price": "900"
     },
     {
       "name": "Rebook blue",
@@ -97,7 +106,7 @@
       "e-tag":"cloths wears men fashion fancy",
       "img_url": "/img/products/men/pants/rebook-blue.jpg",
       "description": "",
-      "price": ""
+      "price": "1500"
     },
     {
       "name": "Checks Boxs",
@@ -106,7 +115,16 @@
       "e-tag":"cloths wears men fashion ",
       "img_url": "/img/products/men/shirt/checks-boxs.jpg",
       "description": "",
-      "price": ""
+      "price": "1200"
+    },
+    {
+      "name": "Black silk style",
+      "id": 1,
+      "tag": "shirt",
+      "e-tag":"cloths wears men fashion ",
+      "img_url": "/img/products/men/shirt/black_style_men.jpg",
+      "description": "",
+      "price": "1000"
     },
     {
       "name": "Dark blue dots",

@@ -221,6 +221,6 @@ var checkout_cart = () => {
     "Please login to place order!!",
     `<a href='login.html#checkout/?total=${summary_total.get()}&ref=${makeid(
       12
-    )}'><b>Goto Login page..</b></a>`
+    )}'><b>Goto Login page.. <i class="fa-solid fa-right-to-bracket" sytle="font-size:1.4rem; align-item:right"></i></b></a>`
   );
 };

@@ -71,6 +71,39 @@
       "description": "Lorem",
       "img_url": "/img/products/kids/white-dress.jpg",
       "price": ""
+    },
+    {
+      "name": "Fade green kid",
+      "id": "",
+      "tag": "kids fade green kid",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "",
+      "img_url": "img/products/kids/fade_green_kid.jpg",
+      "price": ""
+    },{
+      "name": "Green peach",
+      "id": "",
+      "tag": "kids green peach kid",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "",
+      "img_url": "img/products/kids/green_peach_kid.jpg",
+      "price": ""
+    },{
+      "name": "Maroon lightgreen dress",
+      "id": "",
+      "tag": "kids maroon light green kid",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "",
+      "img_url": "img/products/kids/maroon_light_green_kid.jpg",
+      "price": ""
+    },{
+      "name": "Peach colorful kid",
+      "id": "",
+      "tag": "kids peach colorful kid",
+      "e-tag": "kids children clothes wears outfit fashion style cool",
+      "description": "",
+      "img_url": "img/products/kids/peach_colorful_kid.jpg",
+      "price": ""
     }
   ]
 }
