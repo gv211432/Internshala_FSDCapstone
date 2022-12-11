@@ -82,9 +82,15 @@ var inc_dec_items = (to_inc, input_id) => {
       if (to_inc) {
         item_count.value = (data.no + 1).toString();
         cart_arr[index].no += 1;
-      } else if (data.no > 0) {
+      } else if (data.no > 1) {
         item_count.value = (data.no - 1).toString();
         cart_arr[index].no -= 1;
+      } else {
+        push_notification(
+          data,
+          "Count can't be less than one.",
+          "Press <span class='text-danger'><b>red</b></span> delete button to remove it!"
+        );
       }
     }
     setCookie("cart", JSON.stringify(cart_arr));

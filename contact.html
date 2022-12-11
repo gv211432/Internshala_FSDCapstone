@@ -5,8 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/global.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link
@@ -50,32 +51,32 @@
           <form>
             <!-- Name input -->
             <div class="mb-3">
-              <label for="name-input" class="form-label">Name</label>
+              <label for="name_input" class="form-label">Name</label>
               <input
                 type="text"
                 class="form-control"
-                id="name-input"
+                id="name_input"
                 aria-describedby="emailHelp"
                 placeholder="Enter your name"
               />
             </div>
             <!-- Email input -->
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <label for="emial_input" class="form-label">Email</label>
               <input
                 type="email"
                 class="form-control"
-                id="exampleInputEmail1"
+                id="email_input"
                 placeholder="Enter your email"
                 aria-describedby="emailHelp"
               />
             </div>
             <!-- Message input -->
             <div class="mb-3">
-              <label for="messsag-input" class="form-label">Message</label>
+              <label for="messsag_input" class="form-label">Message</label>
               <textarea
                 class="form-control"
-                id="messsag-input"
+                id="messsag_input"
                 placeholder="Type your message here..."
               ></textarea>
             </div>
@@ -90,7 +91,9 @@
               >
             </div>
             <div class="d-grid gap-2">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary" id="submit_contact">
+                Submit
+              </button>
             </div>
           </form>
         </div>
@@ -108,5 +111,28 @@
     <script src="/js/get_set_cookie.js"></script>
     <script src="/js/load_components.js"></script>
     <script src="/js/global.js"></script>
+    <script>
+      let submit_contact = document.getElementById("submit_contact");
+      submit_contact.addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log("clicked btn");
+        let name = document.getElementById("name_input");
+        let email = document.getElementById("email_input");
+        let msg = document.getElementById("messsag_input");
+        if (name.value == "" || email.value == "" || msg.value == "") {
+          push_notification(
+            { img_url: "/img/error.png" },
+            "Please fill all the fields.",
+            "Unable to send your message!!"
+          );
+        }else{
+          push_notification(
+            { img_url: "/img/check.png" },
+            "Your message is sent..",
+            "Thanks for contacting us. We will reply you shortly."
+          );
+        }
+      });
+    </script>
   </body>
 </html>

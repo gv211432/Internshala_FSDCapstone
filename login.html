@@ -85,7 +85,7 @@
       setTimeout(() => {
         push_notification(
           { img_url: "/img/login.png" },
-          "Use any random-dummy email and password! Its temperory..",
+          "Use <span class='text-danger'>admin@admin.com</span> as email and <span class='text-danger'>123456</span> as password, to login.",
           "<b>You must be loged in to place an order!</b>"
         );
       }, 2000);
@@ -101,7 +101,10 @@
             "Credentials empty!",
             `<b>Please fill all the fields..</b>`
           );
-        } else {
+        } else if (
+          email.value === "admin@admin.com" &&
+          pass.value === "123456"
+        ) {
           push_notification(
             { img_url: "/img/check.png" },
             "You have successfully loged in..",
@@ -134,6 +137,12 @@
             update_cart_count();
             console.log("Items ordered...");
           }
+        } else {
+          push_notification(
+            { img_url: "/img/error.png" },
+            "Use <span class='text-danger'>admin@admin.com</span> as email and <span class='text-danger'>123456</span> as password, to login.",
+            "<b>Invalid user credentials!</b>"
+          );
         }
       });
     </script>

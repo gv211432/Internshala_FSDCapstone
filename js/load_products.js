@@ -230,7 +230,7 @@ var activate_carousle = (mount_point_id) => {
   let multiple_cards_carousel = document.querySelector("#" + mount_point_id);
   // console.log(multiple_cards_carousel)
 
-  if (window.matchMedia("(min-width: 768px)").matches) {
+  if (window.matchMedia("(min-width: 200px)").matches) {
     // let carousel = new bootstrap.Carousel(multiple_cards_carousel, {
     //   interval: false,
     // });
@@ -428,13 +428,11 @@ women_json.onload = () => {
   let women_dress = "";
   let women_pants = "";
   let women_skirt = "";
-  let women_all_featured = ""
 
   let extra_women_all = new StoreExtraCardsData();
   let extra_women_dress = new StoreExtraCardsData();
   let extra_women_skirt = new StoreExtraCardsData();
   let extra_women_pant = new StoreExtraCardsData();
-  // let extra_women_all_featured = new StoreExtraCardsData();
 
   women_data.products.forEach((entry, index) => {
     // console.log("Injecting..", index);
@@ -442,11 +440,6 @@ women_json.onload = () => {
       ? (women_data_html += create_card(entry, index))
       : (women_data_html = create_card(entry, index) + women_data_html);
     extra_women_all.set(create_extra_card(entry, index));
-
-    // Math.random() < 0.3
-    //   ? (women_all_featured += create_card(entry, index))
-    //   : (women_all_featured = create_card(entry, index) + women_all_featured);
-    //   women_all_featured.set(create_extra_card(entry, index));
 
     if (entry.tag.includes("dress")) {
       Math.random() < 0.3
@@ -678,8 +671,12 @@ men_json.onload = () => {
   extra_men_all.innerHTML = extra_men_all_data.get();
   extra_men_pants.innerHTML = extra_men_pants_data.get();
   extra_men_hoodies.innerHTML = extra_men_hoodies_data.get();
-  extra_men_shirts.innerHTML = extra_men_shirts_data.get();                                                                                                                                                                                                                                                                                                                                                                                                                   
-                                                                                                                                                  
+  extra_men_shirts.innerHTML = extra_men_shirts_data.get();
+
+  extra_men_all_data.clear();
+  extra_men_pants_data.clear();
+  extra_men_hoodies_data.clear();
+  extra_men_shirts_data.clear();
   // general section
   let mount_men_product_gen = document.getElementById("mount-men-dress-gen");
 

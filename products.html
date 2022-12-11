@@ -50,6 +50,20 @@
         top: 50%;
         transform: translateY(-50%);
       }
+      @media (min-width: 100px) {
+        .carousel-item {
+          margin-right: 0;
+          /* flex: 0 0 33.333333%; */
+          flex: 0 0 95%;
+          display: block;
+        }
+        .carousel-inner {
+          display: flex;
+        }
+        .card {
+          margin: 0 2px 0 2px;
+        }
+      }
       @media (min-width: 768px) {
         .carousel-item {
           margin-right: 0;
@@ -60,15 +74,14 @@
         .carousel-inner {
           display: flex;
         }
-        .card{
+        .card {
           margin: 0 20px 0 20px;
         }
       }
       @media (min-width: 1170px) {
         .carousel-item {
           margin-right: 0;
-          /* flex: 0 0 45%; */
-          flex: 0 0 33.333333%;
+          flex: 0 0 34%;
           display: block;
         }
         .carousel-inner {
@@ -86,7 +99,6 @@
       .card img {
         max-height: 100%;
         /* margin: 0 50px 0 50px; */
-
       }
       @media (max-width: 767px) {
         .card .img-wrapper {
@@ -173,7 +185,6 @@
             role="tab"
             aria-controls="nav-men"
             aria-selected="false"
-            onclick="update_hash()"
           >
             Men
           </button>
