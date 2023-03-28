@@ -3,4 +3,4 @@ This project is First capstone project for Internshala Full Stack Development co
 
 Find this deployed project at
 
-https://e-shop-gaurav.surge.sh/login.html#checkout/?total=7779&ref=qRvb4NvGoEFH
+https://e-shop-gaurav.surge.sh
